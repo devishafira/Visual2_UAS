@@ -1,4 +1,4 @@
-unit Unit2;
+unit Unit4;
 
 interface
 
@@ -7,25 +7,15 @@ uses
   Dialogs, Grids, DBGrids, StdCtrls;
 
 type
-  TForm2 = class(TForm)
+  TForm4 = class(TForm)
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
-    Label5: TLabel;
     Edit1: TEdit;
     Edit2: TEdit;
     Edit3: TEdit;
     ComboBox1: TComboBox;
-    Edit4: TEdit;
-    Label6: TLabel;
-    Label7: TLabel;
-    Label8: TLabel;
-    Label9: TLabel;
-    Edit5: TEdit;
-    ComboBox2: TComboBox;
-    Edit6: TEdit;
-    Edit7: TEdit;
     Button1: TButton;
     Button2: TButton;
     Button3: TButton;
@@ -39,7 +29,7 @@ type
   end;
 
 var
-  Form2: TForm2;
+  Form4: TForm4;
 
 implementation
 

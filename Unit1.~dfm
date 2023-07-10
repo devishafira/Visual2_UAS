@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 192
-  Top = 125
+  Left = 258
+  Top = 137
   Width = 928
   Height = 605
   Caption = 'Siswa'
@@ -61,7 +61,7 @@ object Form1: TForm1
     Left = 32
     Top = 288
     Width = 64
-    Height = 17
+    Height = 13
     Caption = 'Jenis Kelamin'
   end
   object Label8: TLabel
