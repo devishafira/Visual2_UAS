@@ -199,4 +199,32 @@ object Form2: TForm2
     TitleFont.Name = 'MS Sans Serif'
     TitleFont.Style = []
   end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'devi_uas4cvisual'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 'C:\Users\USER\Downloads\libmysql.dll'
+    Left = 544
+    Top = 184
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM tb_walikelas')
+    Params = <>
+    Left = 600
+    Top = 184
+  end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    Left = 656
+    Top = 184
+  end
 end

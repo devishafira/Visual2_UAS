@@ -264,4 +264,32 @@ object Form1: TForm1
     TitleFont.Name = 'MS Sans Serif'
     TitleFont.Style = []
   end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'devi_uas4cvisual'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 'D:\kulyah\semester4\visual2\uas visual dv\libmysql.dll'
+    Left = 584
+    Top = 296
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM  tb_siswa ')
+    Params = <>
+    Left = 632
+    Top = 296
+  end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    Left = 680
+    Top = 296
+  end
 end
