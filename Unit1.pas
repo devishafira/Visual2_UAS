@@ -42,6 +42,7 @@ type
     DBGrid1: TDBGrid;
     procedure Label1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -53,9 +54,35 @@ var
 
 implementation
 
+uses Unit9;
+
 {$R *.dfm}
 
 
+
+
+procedure posisiawal;
+    procedure bersih;
+    procedure FormShow(Sender: TObject);
+    procedure btn1Click(Sender: TObject);
+    procedure btn2Click(Sender: TObject);
+    procedure DBGrid1CellClick(Column: TColumn);
+    procedure btn3Click(Sender: TObject);
+    procedure btn5Click(Sender: TObject);
+      private
+    { Private declarations }
+       public
+    { Public declarations }
+      end;
+
+var
+  Form1: TForm1;
+
+      implementation
+
+uses menu;
+
+{$R *.dfm}
 
 
 end.
