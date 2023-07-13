@@ -139,4 +139,32 @@ object Form6: TForm6
       'Aktif '
       'Tidak Aktif')
   end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    Left = 832
+    Top = 120
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'devi_uas4cvisual'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 'C:\Users\USER\Downloads\libmysql.dll'
+    Left = 832
+    Top = 24
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM tb_user')
+    Params = <>
+    Left = 832
+    Top = 72
+  end
 end
