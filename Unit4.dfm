@@ -125,4 +125,32 @@ object Form4: TForm4
     TitleFont.Name = 'MS Sans Serif'
     TitleFont.Style = []
   end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    Left = 840
+    Top = 160
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'devi_uas4cvisual'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 'C:\Users\USER\Downloads\libmysql.dll'
+    Left = 840
+    Top = 80
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM tb_kelas')
+    Params = <>
+    Left = 840
+    Top = 120
+  end
 end
