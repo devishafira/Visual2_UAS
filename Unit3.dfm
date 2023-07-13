@@ -3,7 +3,7 @@ object Form3: TForm3
   Top = 136
   Width = 928
   Height = 480
-  Caption = 'x`'
+  Caption = 'Orang Tua'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -219,5 +219,33 @@ object Form3: TForm3
     TitleFont.Height = -11
     TitleFont.Name = 'MS Sans Serif'
     TitleFont.Style = []
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'devi_uas4cvisual'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 'C:\Users\USER\Downloads\libmysql.dll'
+    Left = 568
+    Top = 200
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM tb_orangtua')
+    Params = <>
+    Left = 608
+    Top = 200
+  end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    Left = 648
+    Top = 200
   end
 end

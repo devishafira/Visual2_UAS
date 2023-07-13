@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 194
-  Top = 152
+  Left = 216
+  Top = 181
   Width = 928
   Height = 555
   Caption = 'Siswa'
@@ -268,7 +268,6 @@ object Form1: TForm1
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
-    Connected = True
     HostName = 'localhost'
     Port = 3306
     Database = 'devi_uas4cvisual'
@@ -280,7 +279,6 @@ object Form1: TForm1
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
-    Active = True
     SQL.Strings = (
       'SELECT * FROM  tb_siswa ')
     Params = <>

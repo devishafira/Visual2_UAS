@@ -1,6 +1,6 @@
 object Form2: TForm2
-  Left = 211
-  Top = 219
+  Left = 172
+  Top = 149
   Width = 928
   Height = 480
   Caption = 'Wali Kelas'
@@ -198,5 +198,31 @@ object Form2: TForm2
     TitleFont.Height = -11
     TitleFont.Name = 'MS Sans Serif'
     TitleFont.Style = []
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'devi_uas4cvisual'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 'C:\Users\USER\Downloads\libmysql.dll'
+    Left = 544
+    Top = 184
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    SQL.Strings = (
+      'SELECT * FROM tb_walikelas')
+    Params = <>
+    Left = 600
+    Top = 184
+  end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    Left = 656
+    Top = 184
   end
 end
